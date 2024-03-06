@@ -22,7 +22,7 @@ const AppRouter = () => {
             <Route path="/" element={<AdminLayout/>} >
               <Route path="/" element={<UserPage />} />
               <Route path="users" element={<UserPage />} />
-              <Route path="admin" element={<ProtectedRoute user={user.roles[0].name}><>Admin home</></ProtectedRoute>} />
+              <Route path="admin" element={<ProtectedRoute user={user.roles[0].name}></ProtectedRoute>} />
               <Route path="user" element={<>Eres usuario</>} />
             </Route>
           </>
